@@ -10,7 +10,6 @@ EFI for Lenovo-M710q-QNVH with OpenCore 0.8.8 bootloader
 | Component        | Specifications                         |
 | ---------------- | ---------------------------------------|
 | CPU              | Intel® Core™ i7-8850H(ES) (QNVH)       |
-| CPU              | Intel® Core™ i7-8850H(ES) (QNVH)       |
 | iGPU             | Intel® UHD Graphics 630                |
 | RAM              | 2 * 16GB DDR4 2666Mhz                   |
 | NVMe             | Kioxia RC10 1T      |
@@ -41,6 +40,7 @@ CSM
 
 ####  
 更新BIOS到最新并魔改,推荐指定频率上限如: 六核3.0G , 然后指定显卡频率上限 推荐800MHz左右, 风扇安静 
+
 在BIOS中必须完全关闭CSM，使用UEFI引导,设置DVMT为64M以上
 然后重启安装macOS     
 
