@@ -1,19 +1,24 @@
 # Lenovo-M710q-QNCT-Hackintosh
-EFI for Lenovo-M710q-QNCT with OpenCore 0.8.0 bootloader  
+EFI for Lenovo-M710q-QNVH with OpenCore 0.8.8 bootloader   
+
+<img width="586" alt="image" src="https://user-images.githubusercontent.com/8513521/218945577-c0f74733-4e0c-4306-a124-01fec6905af3.png">
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/8513521/218945873-1aee484c-d23b-425e-8363-1053e7585db7.png">
+
 
 ### Computer Spec:
 
 | Component        | Specifications                         |
 | ---------------- | ---------------------------------------|
-| CPU              | Intel® Core™ i7-8850H(ES) (QNCT)       |
+| CPU              | Intel® Core™ i7-8850H(ES) (QNVH)       |
+| CPU              | Intel® Core™ i7-8850H(ES) (QNVH)       |
 | iGPU             | Intel® UHD Graphics 630                |
-| RAM              | 2 * 8GB DDR4 2666Mhz                   |
-| NVMe             | Kioxia RC10 512GB / WD SN520 512GB     |
+| RAM              | 2 * 16GB DDR4 2666Mhz                   |
+| NVMe             | Kioxia RC10 1T      |
 | LAN              | Intel I219-V                           |
 | Audio            | Realtek ALC294                         |
 | WiFi & Bluetooth | Intel Wi-Fi 6 AX200 / 7265AC           |
 | SMBIOS           | MacMini8,1                             |
-| BootLoader       | OpenCore 0.8.0                         |
+| BootLoader       | OpenCore 0.8.8                         |
 
 ### What Works:
 
@@ -34,14 +39,9 @@ EFI for Lenovo-M710q-QNCT with OpenCore 0.8.0 bootloader
 * Disable:  
 CSM
 
-#### 说人话
-更新BIOS到最新并魔改，不然安装会报多线程的错误（不懂可以看[BV1Ab4y1Z781](https://www.bilibili.com/video/BV1Ab4y1Z781)）  
+####  
+更新BIOS到最新并魔改,推荐指定频率上限如: 六核3.0G , 然后指定显卡频率上限 推荐800MHz左右, 风扇安静 
 在BIOS中必须完全关闭CSM，使用UEFI引导,设置DVMT为64M以上
-然后重启安装macOS  
-0.7.0及以后版本中加入了引导主题和开机声音，4K显示器显示主题可能会有黑边，把config.plist里NVRAM中的UIScale改为02即可  
+然后重启安装macOS     
 
-## Credits
-
-- [Apple](https://apple.com) for macOS.
-- [Acidanthera](https://github.com/acidanthera) for OpenCore and all the lovely hackintosh work.
-- [Dortania](https://github.com/dortania) for great and detailed guides.
+ 
